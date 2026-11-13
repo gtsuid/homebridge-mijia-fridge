@@ -1,5 +1,7 @@
 # homebridge-mijia-fridge
 
+[![npm version](https://img.shields.io/npm/v/homebridge-mijia-fridge)](https://www.npmjs.com/package/homebridge-mijia-fridge)
+
 Homebridge plugin for Xiaomi/Mijia Smart Refrigerator.
 
 Apple HomeKit currently does not support refrigerators as native accessories, so this plugin uses existing accessory types as a workaround.
@@ -12,7 +14,7 @@ For now, the plugin keeps this simplified approach until Apple introduces native
 
 ## Supported Devices
 | No | Product | Model | Exposed Accessories |
-| :-: | :-: | :- | :- |
+| :-: | :- | :- | :- |
 | 1 | Mijia Refrigerator Cross Door 510L/502L/451L | ``midjd.fridge.rs01s`` | 3 temperature sensors, 2 cooling mode switches, door sensor |
 | 2 | Mijia Refrigerator Side-by-Side 635L | ``mibx5.fridge.rd01j2`` | 2 temperature sensors, 2 cooling mode switches, door sensor |
 
