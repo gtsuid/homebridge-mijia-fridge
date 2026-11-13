@@ -35,3 +35,5 @@ You can config the plugin via Homebridge UI or manually edit the ``JSON Config``
 | 6 | `devices[].model` | `"auto"` for automatic detection, `"midjd.fridge.rs01s"` for Cross Door 510L/502L/451L, or `"mibx5.fridge.rd01j2"` for Side-by-Side 635L. | Optional (defaults to `"auto"`) |
 
 ## Credits
+- [Nick Farina](https://x.com/nfarina), the original creator of [Homebridge](https://github.com/homebridge/homebridge)
+- [Xiaomi MIOT Spec](https://home.miot-spec.com) for the detailed fridges tech specs
