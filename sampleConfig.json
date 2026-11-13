@@ -1,0 +1,15 @@
+{
+  "platforms": [
+    {
+      "platform": "MijiaFridge",
+      "devices": [
+        {
+          "name": "Kitchen Fridge",
+          "model": "midjd.fridge.rs01s",
+          "ip": "192.168.1.110",
+          "token": "32-character-hexadecimal-token"
+        }
+      ]
+    }
+  ]
+}

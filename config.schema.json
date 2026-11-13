@@ -1,0 +1,60 @@
+{
+  "pluginAlias": "MijiaFridge",
+  "pluginType": "platform",
+  "singular": true,
+  "strictValidation": true,
+  "schema": {
+    "type": "object",
+    "required": ["devices"],
+    "properties": {
+      "devices": {
+        "title": "Refrigerators",
+        "type": "array",
+        "items": {
+          "title": "Refrigerator",
+          "type": "object",
+          "required": ["ip", "token"],
+          "properties": {
+            "name": {
+              "title": "Fridge name (optional)",
+              "type": "string",
+              "description": "Label for this fridge in Homebridge settings. For example, Kitchen Fridge."
+            },
+            "model": {
+              "title": "Refrigerator model",
+              "type": "string",
+              "default": "auto",
+              "oneOf": [
+                { "title": "Detect automatically", "enum": ["auto"] },
+                { "title": "Mijia Refrigerator Cross Door 510L/502L/451L", "enum": ["midjd.fridge.rs01s"] },
+                { "title": "Mijia Refrigerator Side-by-Side 635L", "enum": ["mibx5.fridge.rd01j2"] }
+              ]
+            },
+            "ip": {
+              "title": "Fridge IP address",
+              "type": "string",
+              "format": "ipv4",
+              "placeholder": "192.168.1.100"
+            },
+            "token": {
+              "title": "LAN token",
+              "type": "string",
+              "pattern": "^[A-Za-z0-9]{32}$",
+              "minLength": 32,
+              "maxLength": 32,
+              "x-schema-form": { "type": "password" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "layout": [
+    {
+      "key": "devices",
+      "type": "array",
+      "buttonText": "Add Refrigerator",
+      "items": ["devices[].name", "devices[].model", "devices[].ip", "devices[].token"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-mijia-fridge",
+  "version": "0.0.2",
+  "description": "Homebridge plugin for Xiaomi/Mijia refrigerator",
+  "keywords": [
+      "homebridge-plugin",
+      "supports-hap",
+      "xiaomi",
+      "mijia",
+      "mi",
+      "refrigerator",
+      "smart-home"
+    ],
+  "author": "Gayuh Tri Satria",
+  "homepage": "https://github.com/gtsuid/homebridge-mijia-fridge#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gtsuid/homebridge-mijia-fridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gtsuid/homebridge-mijia-fridge/issues"
+  },
+  "engines": {
+    "node": "^22.0.0 || ^24.0.0 || ^26.0.0",
+    "homebridge": "^2.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
