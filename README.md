@@ -14,7 +14,7 @@ For now, the plugin keeps this simplified approach until Apple introduces native
 
 ## Supported Devices
 | No | Product | Model | Exposed Accessories |
-| :-: | :- | :- | :- |
+| :-: | --- | --- | --- |
 | 1 | Mijia Refrigerator Cross Door 510L/502L/451L | ``midjd.fridge.rs01s`` | 3 temperature sensors, 2 cooling mode switches, door sensor |
 | 2 | Mijia Refrigerator Side-by-Side 635L | ``mibx5.fridge.rd01j2`` | 2 temperature sensors, 2 cooling mode switches, door sensor |
 
@@ -39,3 +39,6 @@ You can config the plugin via Homebridge UI or manually edit the ``JSON Config``
 ## Credits
 - [Nick Farina](https://x.com/nfarina), the original creator of [Homebridge](https://github.com/homebridge/homebridge)
 - [Xiaomi MIOT Spec](https://home.miot-spec.com) for the detailed fridges tech specs
+
+## Changelog
+See [CHANGELOG.md](CHANGELOG.md) for release notes and version history.
